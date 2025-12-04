@@ -18,8 +18,8 @@
 # 使用本代码即表示您同意遵守上述原则和LICENSE中的所有条款。
 
 # 基础配置
-PLATFORM = "xhs"  # 平台，xhs | dy | ks | bili | wb | tieba | zhihu
-KEYWORDS = "编程副业,编程兼职"  # 关键词搜索配置，以英文逗号分隔
+PLATFORM = "dy"  # 平台，xhs | dy | ks | bili | wb | tieba | zhihu
+KEYWORDS = "水果"  # 关键词搜索配置，以英文逗号分隔
 LOGIN_TYPE = "qrcode"  # qrcode or phone or cookie
 COOKIES = ""
 CRAWLER_TYPE = (
@@ -57,7 +57,7 @@ CDP_DEBUG_PORT = 9222
 # 如果为空，系统会自动检测Chrome/Edge的安装路径
 # Windows示例: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
 # macOS示例: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-CUSTOM_BROWSER_PATH = ""
+CUSTOM_BROWSER_PATH = "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
 
 # CDP模式下是否启用无头模式
 # 注意：即使设置为True，某些反检测功能在无头模式下可能效果不佳
@@ -71,7 +71,7 @@ BROWSER_LAUNCH_TIMEOUT = 60
 AUTO_CLOSE_BROWSER = True
 
 # 数据保存类型选项配置,支持五种类型：csv、db、json、sqlite、excel, 最好保存到DB，有排重的功能。
-SAVE_DATA_OPTION = "json"  # csv or db or json or sqlite or excel
+SAVE_DATA_OPTION = "excel"  # csv or db or json or sqlite or excel
 
 # 用户浏览器缓存的浏览器文件配置
 USER_DATA_DIR = "%s_user_data_dir"  # %s will be replaced by platform name
@@ -117,10 +117,10 @@ FONT_PATH = "./docs/STZHONGS.TTF"
 # 爬取间隔时间
 CRAWLER_MAX_SLEEP_SEC = 2
 
-from .bilibili_config import *
-from .xhs_config import *
+#from .bilibili_config import *
+#from .xhs_config import *
 from .dy_config import *
-from .ks_config import *
-from .weibo_config import *
-from .tieba_config import *
-from .zhihu_config import *
+#from .ks_config import *
+#from .weibo_config import *
+#from .tieba_config import *
+#from .zhihu_config import *
